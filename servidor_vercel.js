@@ -1,10 +1,11 @@
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
-import { Client } from "pg"; // Mudança para importar Client corretamente
+import pkg from "pg"; // Importando o pacote pg como um módulo padrão
+const { Client } = pkg; // Desestruturando Client do pacote
 
 const app = express();
-//codigo 2
+//codigo 3
 // Configuração do middleware
 app.use(express.json());
 app.use(cors());
