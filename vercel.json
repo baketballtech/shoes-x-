@@ -7,8 +7,12 @@
       }
     ],
     "routes": [
-      {
+        {
         "src": "/pegar",
+        "dest": "/servidor_vercel.js"
+        },
+      {
+        "src": "(.*)",
         "dest": "/servidor_vercel.js"
       }
     ]
